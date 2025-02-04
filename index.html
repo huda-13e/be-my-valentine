@@ -4,124 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentine's Day Card</title>
+    
+    <!-- Link to IM Fell DW Pica font -->
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap" rel="stylesheet">
+    
     <style>
-        /* Importing IM Fell DW Pica font */
-        @import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap');
-
-        /* Body Styling */
         body {
-            font-family: 'IM Fell DW Pica', serif;
-            background-color: #ffe6f7; /* Light pink background */
             margin: 0;
             padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #000;
+            font-family: 'IM Fell DW Pica', serif;
+            background-color: #FFEBEE; /* Light Pink Background */
             text-align: center;
         }
 
-        /* Card Styling */
-        .card-container {
-            background-color: #fff;
-            color: #ff66b2; /* Soft pink text color */
-            border-radius: 15px;
-            padding: 40px;
-            width: 80%;
-            max-width: 500px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            font-size: 1.2em;
-            opacity: 0;
-            animation: fadeIn 2s forwards; /* Fade-in animation */
-        }
-
-        /* Fade-in animation */
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white; /* White Card */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
-            font-size: 2.8em;
-            margin-bottom: 15px;
-            color: #ff66b2; /* Bright pink for the header */
+            font-size: 2.5em;
+            color: #F8BBD0; /* Light Pink Text */
         }
 
         p {
-            margin-bottom: 20px;
             font-size: 1.2em;
-            color: #ff66b2; /* Soft pink text */
+            color: #F8BBD0; /* Light Pink Text */
+            line-height: 1.6;
         }
 
-        /* Button Styling */
-        .btn {
-            background-color: #ffb6c1; /* Light pink button */
+        .button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #F8BBD0; /* Light Pink Button */
+            color: white;
             border: none;
-            padding: 12px 30px;
-            font-size: 1.5em;
-            border-radius: 10px;
+            border-radius: 5px;
             cursor: pointer;
-            color: #fff;
-            font-family: 'IM Fell DW Pica', serif; /* Button font */
-            transition: background-color 0.3s ease;
+            font-size: 1.2em;
         }
 
-        .btn:hover {
-            background-color: #ff66b2; /* Darker pink on hover */
+        .button:hover {
+            background-color: #F06292; /* Darker Pink for hover effect */
         }
-
-        /* Heart Decoration Styling */
-        .hearts {
-            font-size: 2em;
-            color: #ff66b2;
-            margin: 10px 0;
-        }
-
-        .heart {
-            display: inline-block;
-            margin: 5px;
-            animation: heartbeat 1.5s infinite;
-        }
-
-        @keyframes heartbeat {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.2);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
-
     </style>
 </head>
 <body>
 
-    <!-- Card Content -->
-    <div class="card-container">
-        <h1>I LOVE YOUUU!!!</h1>
-        <p>in every moment we share, i find a little piece of magic, just like in the lyrics of "daylight" (by the 4th loml). you're my favourite feeling, my happy thought, and literally my everything omg!</p>
-
-        <!-- Heart Decorations -->
-        <div class="hearts">
-            <span class="heart">💖</span>
-            <span class="heart">💗</span>
-            <span class="heart">💘</span>
-            <span class="heart">💝</span>
-        </div>
-
-        <!-- Be my valentine button -->
-        <p><strong>be my valentine?</strong></p>
-        <a href="thank-you.html"><button class="btn">yes</button></a>
-    </div>
+<!-- Page 1 Content -->
+<div class="container">
+    <h1>I LOVE YOUUU!!!</h1>
+    <p>in every moment we share, i find a little piece of magic, just like in the lyrics of "daylight" (by the 4th loml). you're my favourite feeling, my happy thought, and literally my everything omg!</p>
+    <a href="page2.html">
+        <button class="button">be my valentine?</button>
+    </a>
+</div>
 
 </body>
 </html>
